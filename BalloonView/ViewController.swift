@@ -12,7 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        let balloonView = BalloonView()
+        balloonView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        balloonView.center = view.center
+        view.addSubview(balloonView)
     }
 
 
